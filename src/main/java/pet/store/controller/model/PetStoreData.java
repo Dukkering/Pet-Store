@@ -39,43 +39,6 @@ public class PetStoreData {
 		for (Customer customer : petStore.getCustomers()) {
 			customers.add(new PetStoreCustomer(customer));
 		}
-	}
-
-	@Data
-	@NoArgsConstructor
-	static class PetStoreCustomer {
-		private Long customerId;
-		private String customerFirstName;
-		private String customerLastName;
-		private String customerEmail;
-
-		PetStoreCustomer(Customer customer) {
-			customerId = customer.getCustomerId();
-			customerFirstName = customer.getCustomerFirstName();
-			customerLastName = customer.getCustomerLastName();
-			customerEmail = customer.getCustomerEmail();
-
-		}
 
 	}
-
-	@Data
-	@NoArgsConstructor
-	static class PetStoreEmployee {
-		private Long employeeId;
-		private String employeeFirstName;
-		private String employeeLastName;
-		private String employeePhone;
-		private String employeeJobTitle;
-
-		PetStoreEmployee(Employee employee) {
-			employeeId = employee.getEmployeeId();
-			employeeFirstName = employee.getEmployeeFirstName();
-			employeeLastName = employee.getEmployeeLastName();
-			employeePhone = employee.getEmployeePhone();
-			employeeJobTitle = employee.getEmployeeJobTitle();
-		}
-
-	}
-
 }
