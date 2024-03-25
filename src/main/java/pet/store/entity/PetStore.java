@@ -40,7 +40,6 @@ public class PetStore {
 	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
-	
 	@ManyToMany(cascade = CascadeType.PERSIST)
 	@JoinTable(name = "pet_store_customer", 
 	joinColumns = @JoinColumn(name = "pet_store_id"), 
