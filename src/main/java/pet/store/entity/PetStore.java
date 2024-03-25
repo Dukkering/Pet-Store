@@ -29,7 +29,7 @@ public class PetStore {
 	private String petStoreAddress;
 	private String petStoreCity;
 	private String petStoreState;
-	private Long petStoreZip;
+	private String petStoreZip;
 	private String petStorePhone;
 
 	
